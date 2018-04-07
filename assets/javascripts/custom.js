@@ -1,6 +1,12 @@
 const abbreviationsInput = document.querySelector('#filter');
 const tr = document.getElementsByTagName('tr');
 
+(function() {
+    for (i = 0; i < tr.length; i++) {
+        let td = tr[i].getElementsByTagName("td")[0];
+        tr[i].style.textTransform = "uppercase";
+    }
+})();
 
 abbreviationsInput.addEventListener('keyup', filterAbbreviations);
 
