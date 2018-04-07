@@ -10,8 +10,6 @@
 
     <link rel="stylesheet" href="assets/stylesheets/materialize.min.css">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
     <!-- Custom Style -->
 
     <link rel="stylesheet" href="assets/stylesheets/custom.min.css">
@@ -19,6 +17,7 @@
     <!-- External Fonts -->
 
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Handlee|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Favicon -->
 
@@ -43,10 +42,13 @@
                 <div class="col s12">
                     <div class="input-field col s8 centered offset-s2">
                         <input type="text" id="filter" name="filter" class="validate">
-                        <label class="fa fa-search" for="search"><i class="material-icons"> Search</i></label>
+                        <label class="labelSearch" for="search">
+                            <i class="material-icons">search</i>
+                             
+                        </label>
                     </div>
 
-                    <table class="centered highlight col 8">
+                    <table class="centered highlight col 8" id="myTable">
                         <thead>
                             <tr>
                                 <th>Abbreviations</th>
@@ -222,9 +224,98 @@
                                 <td>bump</td>
                                 <td>Bring Up My Post</td>
                             </tr>
-
-
-
+                            <tr>
+                                <td>CMIIW</td>
+                                <td>Correct me if I'm wrong</td>
+                            </tr>
+                            <tr>
+                                <td>COB</td>
+                                <td>Close Of Business</td>
+                            </tr>
+                            <tr>
+                                <td>crawl</td>
+                                <td>To retrieve a web page along with the hyperlinks that reference it</td>
+                            </tr>
+                            <tr>
+                                <td>crapplet</td>
+                                <td>A poorly written computer application</td>
+                            </tr>
+                            <tr>
+                                <td>crapware</td>
+                                <td>Unwanted software that is often installed with another program</td>
+                            </tr>
+                            <tr>
+                                <td>CU</td>
+                                <td>See you</td>
+                            </tr>
+                            <tr>
+                                <td>CYA</td>
+                                <td>See ya OR Cover Your Ass</td>
+                            </tr>
+                            <tr>
+                                <td>cyber- (prefix)</td>
+                                <td>A term used to connect the subsequent word loosely to the world of computers or the Internet or sex over a computer</td>
+                            </tr>
+                            <tr>
+                                <td>cyberspace</td>
+                                <td>Virtual reality, the Internet, the World Wide Web, and other kinds of computer systems</td>
+                            </tr>
+                            <tr>
+                                <td>DFTT</td>
+                                <td>Don't feed the trolls</td>
+                            </tr>
+                            <tr>
+                                <td>DFTBA</td>
+                                <td>Don't forget to be awesome</td>
+                            </tr>
+                            <tr>
+                                <td>DGAF</td>
+                                <td>Don't give a fuck</td>
+                            </tr>
+                            <tr>
+                                <td>DIAF</td>
+                                <td>Die in a fire</td>
+                            </tr>
+                            <tr>
+                                <td>DILLIGAF/D/S</td>
+                                <td>Does it look like I give a flip / fuck / damn / shit</td>
+                            </tr>
+                            <tr>
+                                <td>D/L</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>DND</td>
+                                <td>Do not disturb</td>
+                            </tr>
+                            <tr>
+                                <td>DOA</td>
+                                <td>Dead on arrival. Refers to hardware that is broken on delivery</td>
+                            </tr>
+                            <tr>
+                                <td>ELI5</td>
+                                <td>Explain like I'm Five</td>
+                            </tr>
+                            <tr>
+                                <td>EOF</td>
+                                <td>End of File</td>
+                            </tr>
+                            <tr>
+                                <td>EOM</td>
+                                <td>End of Message</td>
+                            </tr>
+                            <tr>
+                                <td>EOL</td>
+                                <td>End of Life (device or hardware that is at the end of its product life cycle) OR End of Line</td>
+                            </tr>
+                            <tr>
+                                <td>ESAD</td>
+                                <td>eat shit and die</td>
+                            </tr>
+                            <tr>
+                                <td>ETA</td>
+                                <td>Estimated time of arrival</td>
+                            </tr>
 
 
 
@@ -234,28 +325,36 @@
 
                     </table>
 
-
+                </div>
+                <div class="col-md-12 center text-center m5">
+                    <span class="centered" id="total_reg"></span>
+                    <ul class="pagination pager centered" id="myPager"></ul>
                 </div>
             </div>
+
         </div>
 
+        </div>
+        </div>
 
     </main>
 
 
     <div class="footer-container">
-        <h5>© 2018 Cyril Douglas</h5>
+        <h5>Copyright © 2018 Cyril Douglas</h5>
         <p>All Of These Abbreviations Taken Form <a href="https://en.wiktionary.org/wiki/Appendix:English_internet_slang" target="_blank">Here</a>.</p>
     </div class="footer-container">
 
 
     <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/jquery-2.2.1.min.js"></script>
+    <script src="assets/javascripts/materialize.min.js"></script>
+    <script src="assets/javascripts/pagination.js"></script>
 
     <!-- Custom Script -->
 
     <script src="assets/javascripts/custom.js"></script>
+
 
 
 </body>

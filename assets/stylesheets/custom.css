@@ -60,7 +60,11 @@ body {
   min-height: calc(100vh - 6rem);
 }
 
-.fa-search {
+li.active {
+  background: #7b1fa2 !important;
+}
+
+.labelSearch {
   color: #7b1fa2;
 }
 

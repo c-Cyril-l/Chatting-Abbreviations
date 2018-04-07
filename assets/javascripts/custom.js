@@ -1,3 +1,19 @@
+// Pagination
+
+$(document).ready(function() {
+    $('#myTable').pageMe({
+        pagerSelector: '#myPager',
+        activeColor: '#7b1fa2',
+        prevText: 'Anterior',
+        nextText: 'Siguiente',
+        showPrevNext: true,
+        hidePageNumbers: false,
+        perPage: 15
+    });
+});
+
+// Custom
+
 const abbreviationsInput = document.querySelector('#filter');
 const tr = document.getElementsByTagName('tr');
 let target;

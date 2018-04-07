@@ -3,7 +3,7 @@ $handlee-font: 'Handlee', cursive
 $montserrat-font: 'Montserrat', sans-serif
 $gloria-font: 'Gloria Hallelujah', cursive
   
-$purple-dark-color: #7b1fa2
+$purple-dark-color: #7b1fa2 
 $purple-dark-darker-color: darken($purple-dark-color, 5%)
 $purple-dark-light-color: lighten($purple-dark-color, 5%)
 $whitesmoke-color: whitesmoke
@@ -55,7 +55,10 @@ body
 .container
   min-height: calc(100vh - 6rem)
 
-.fa-search
+li.active
+  background: #7b1fa2 !important
+
+.labelSearch
   color: $purple-dark-color
 
 .input-field input[type=text]:focus + label
