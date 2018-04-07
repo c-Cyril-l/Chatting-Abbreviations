@@ -1,0 +1,84 @@
+// Vriables
+$handlee-font: 'Handlee', cursive
+$montserrat-font: 'Montserrat', sans-serif
+$gloria-font: 'Gloria Hallelujah', cursive
+  
+$purple-dark-color: #7b1fa2
+$purple-dark-darker-color: darken($purple-dark-color, 5%)
+$purple-dark-light-color: lighten($purple-dark-color, 5%)
+$whitesmoke-color: whitesmoke
+  
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+
+
+html 
+  height: 100%
+  
+
+body
+    display: flex
+    flex-direction: column
+    width: 100%
+  
+
+.header-wrapper
+  background: $purple-dark-color
+  color: $whitesmoke-color
+  text-align: center
+  padding: 4rem
+  border-bottom: 1px solid $purple-dark-darker-color
+  
+  h1, p 
+    padding: 1rem
+    font-family: $gloria-font
+    user-select: none
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  h1 
+    font-family: $handlee-font
+    font-size: 3.5rem
+
+  p 
+    font-size: 1.2rem
+
+.container
+  min-height: calc(100vh - 6rem)
+
+.fa-search
+  color: $purple-dark-color
+
+.input-field input[type=text]:focus + label
+  color: $purple-dark-color !important
+  margin-top: 1rem
+
+.input-field input[type=text]:focus 
+  border-bottom: 1px solid $purple-dark-color !important
+  box-shadow: 0 1px 0 0 $purple-dark-color !important
+   
+
+.footer-container
+  position: relative
+  align-self: flex-end
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: $purple-dark-color
+  height: 6rem
+  color: $whitesmoke-color
+  border-top: 1px solid $purple-dark-darker-color
+  
+  h5, p
+    font-family: $handlee-font
+    text-shadow: 0 0 3px #333, 0 0 5px #333
+  a, a:active
+    color: $purple-dark-light-color
+    &:hover,&:focus
+      color: $purple-dark-darker-color
