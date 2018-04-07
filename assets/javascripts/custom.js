@@ -3,8 +3,8 @@ const tr = document.getElementsByTagName('tr');
 
 (function() {
     for (i = 0; i < tr.length; i++) {
-        let td = tr[i].getElementsByTagName("td")[0];
-        tr[i].style.textTransform = "uppercase";
+        let td = tr[i].firstElementChild;
+        td.style.textTransform = "uppercase";
     }
 })();
 
