@@ -25,9 +25,15 @@ body
     width: 100%
   
 
-.header-wrapper
-  background: $purple-dark-color
+.header-wrapper,
+.footer-container
+  background: linear-gradient(rgba($purple-dark-color, .94), rgba($purple-dark-color, .94)), url('../images/bg-header.jpg') 
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
   color: $whitesmoke-color
+
+.header-wrapper
   text-align: center
   padding: 4rem
   border-bottom: 1px solid $purple-dark-darker-color
@@ -70,9 +76,7 @@ body
   flex-direction: column
   justify-content: center
   align-items: center
-  background: $purple-dark-color
   height: 6rem
-  color: $whitesmoke-color
   border-top: 1px solid $purple-dark-darker-color
   
   h5, p

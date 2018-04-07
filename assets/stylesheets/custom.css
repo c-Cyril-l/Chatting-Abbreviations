@@ -20,9 +20,17 @@ body {
   width: 100%;
 }
 
-.header-wrapper {
-  background: #7b1fa2;
+.header-wrapper,
+.footer-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 31, 162, 0.94)), to(rgba(123, 31, 162, 0.94))), url("../images/bg-header.jpg");
+  background: linear-gradient(rgba(123, 31, 162, 0.94), rgba(123, 31, 162, 0.94)), url("../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: whitesmoke;
+}
+
+.header-wrapper {
   text-align: center;
   padding: 4rem;
   border-bottom: 1px solid #6b1b8d;
@@ -86,9 +94,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #7b1fa2;
   height: 6rem;
-  color: whitesmoke;
   border-top: 1px solid #6b1b8d;
 }
 
