@@ -60,10 +60,6 @@ body {
   min-height: calc(100vh - 6rem);
 }
 
-li.active {
-  background: #7b1fa2 !important;
-}
-
 .labelSearch {
   color: #7b1fa2;
 }
@@ -77,6 +73,21 @@ li.active {
   border-bottom: 1px solid #7b1fa2 !important;
   -webkit-box-shadow: 0 1px 0 0 #7b1fa2 !important;
           box-shadow: 0 1px 0 0 #7b1fa2 !important;
+}
+
+.pagintation-wrapper {
+  position: relative !important;
+  top: 2rem !important;
+  padding: 4rem !important;
+}
+
+.pagintation-wrapper .pagination.pager {
+  position: relative !important;
+  padding: 2rem !important;
+}
+
+.pagintation-wrapper li.active {
+  background: #7b1fa2 !important;
 }
 
 .footer-container {

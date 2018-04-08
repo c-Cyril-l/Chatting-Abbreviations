@@ -1,12 +1,9 @@
-// Vriables
-$handlee-font: 'Handlee', cursive
-$montserrat-font: 'Montserrat', sans-serif
-$gloria-font: 'Gloria Hallelujah', cursive
-  
-$purple-dark-color: #7b1fa2 
-$purple-dark-darker-color: darken($purple-dark-color, 5%)
-$purple-dark-light-color: lighten($purple-dark-color, 5%)
-$whitesmoke-color: whitesmoke
+// Imports
+
+@import colorVariables
+@import fontVariables
+
+// Global Styling
   
 *,
 *::before,
@@ -24,6 +21,7 @@ body
     flex-direction: column
     width: 100%
   
+// Header & Footer Combinations
 
 .header-wrapper,
 .footer-container
@@ -32,6 +30,8 @@ body
   background-size: cover
   background-attachment: fixed
   color: $whitesmoke-color
+
+// Header
 
 .header-wrapper
   text-align: center
@@ -52,11 +52,12 @@ body
   p 
     font-size: 1.2rem
 
+// Container (To make the foooter stick to dock to bottom)  
+
 .container
   min-height: calc(100vh - 6rem)
 
-li.active
-  background: #7b1fa2 !important
+// Search Input
 
 .labelSearch
   color: $purple-dark-color
@@ -69,6 +70,21 @@ li.active
   border-bottom: 1px solid $purple-dark-color !important
   box-shadow: 0 1px 0 0 $purple-dark-color !important
    
+// pagination
+
+.pagintation-wrapper
+  position: relative !important
+  top: 2rem !important
+  padding: 4rem !important
+
+  .pagination.pager
+    position: relative !important
+    padding: 2rem !important
+    
+  li.active
+    background: #7b1fa2 !important
+
+// Footer
 
 .footer-container
   position: relative
