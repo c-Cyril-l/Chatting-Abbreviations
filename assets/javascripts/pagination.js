@@ -38,7 +38,7 @@ $.fn.pageMe = function(opts) {
 
     var curr = 0;
     while (numPages > curr && (settings.hidePageNumbers == false)) {
-        $('<li class="waves-effect"><a href="#" class="page_link">' + (curr + 1) + '</a></li>').appendTo(pager);
+        $('<li class="waves-effect waves-purple"><a href="#" class="page_link">' + (curr + 1) + '</a></li>').appendTo(pager);
         curr++;
     }
 
