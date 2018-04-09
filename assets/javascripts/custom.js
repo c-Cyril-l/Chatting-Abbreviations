@@ -18,7 +18,6 @@ const abbreviationsInput = document.querySelector('#filter');
 const tr = document.getElementsByTagName('tr');
 let target;
 
-
 (function() {
     for (i = 0; i < tr.length; i++) {
         let td = tr[i].firstElementChild;

@@ -1,7 +1,7 @@
 # Chatting-Abbreviations
 A List of most popular internet slang abbreviations...
 
-# [Link](https://c-cyril-l.github.io/Chatting-Abbreviations/)
+# [Link](https://c-cyril-l.github.io/Internet-Abbreviations/)
 
 >  All Abbreviations Taken From [Here](https://en.wiktionary.org/wiki/Appendix:English_internet_slang)
 
@@ -9,7 +9,7 @@ A List of most popular internet slang abbreviations...
 
 ## License
 
-> [Mit License](https://github.com/c-Cyril-l/Chatting-Abbreviations/blob/gh-pages/LICENSE)
+> [Mit License](https://github.com/c-Cyril-l/Internet-Abbreviations/blob/gh-pages/LICENSE)
 
 ## Copyright 
 

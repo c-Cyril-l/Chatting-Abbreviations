@@ -36,7 +36,8 @@ body {
   border-bottom: 1px solid #6b1b8d;
 }
 
-.header-wrapper h1, .header-wrapper p {
+.header-wrapper h1,
+.header-wrapper p {
   padding: 1rem;
   font-family: "Gloria Hallelujah", cursive;
   -webkit-user-select: none;
@@ -69,16 +70,15 @@ body {
   margin-top: 1rem;
 }
 
-.input-field input[type=text]:focus {
+input[type=text]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #7b1fa2 !important;
   -webkit-box-shadow: 0 1px 0 0 #7b1fa2 !important;
           box-shadow: 0 1px 0 0 #7b1fa2 !important;
 }
 
 .pagintation-wrapper {
-  position: relative !important;
-  top: 2rem !important;
-  padding: 4rem !important;
+  position: static !important;
+  padding: 4em !important;
 }
 
 .pagintation-wrapper .pagination.pager {
@@ -88,6 +88,20 @@ body {
 
 .pagintation-wrapper li.active {
   background: #7b1fa2 !important;
+}
+
+.pagintation-wrapper li:hover,
+.pagintation-wrapper li > a:hover {
+  background: #7b1fa2 !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  border-radius: 50%;
+}
+
+.pagintation-wrapper #total_reg {
+  display: blocka;
+  position: static !important;
+  margin-top: -5em;
 }
 
 .footer-container {
@@ -113,15 +127,19 @@ body {
   border-top: 1px solid #6b1b8d;
 }
 
-.footer-container h5, .footer-container p {
+.footer-container h5,
+.footer-container p {
   font-family: "Handlee", cursive;
   text-shadow: 0 0 3px #333, 0 0 5px #333;
 }
 
-.footer-container a, .footer-container a:active {
+.footer-container a,
+.footer-container a:active {
   color: #8b23b7;
 }
 
-.footer-container a:hover, .footer-container a:focus, .footer-container a:active:hover, .footer-container a:active:focus {
+.footer-container a:hover, .footer-container a:focus,
+.footer-container a:active:hover,
+.footer-container a:active:focus {
   color: #6b1b8d;
 }

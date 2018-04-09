@@ -38,7 +38,8 @@ body
   padding: 4rem
   border-bottom: 1px solid $purple-dark-darker-color
   
-  h1, p 
+  h1, 
+  p 
     padding: 1rem
     font-family: $gloria-font
     user-select: none
@@ -66,16 +67,15 @@ body
   color: $purple-dark-color !important
   margin-top: 1rem
 
-.input-field input[type=text]:focus 
+input[type=text]:not(.browser-default):focus:not([readonly])
   border-bottom: 1px solid $purple-dark-color !important
   box-shadow: 0 1px 0 0 $purple-dark-color !important
    
 // pagination
 
 .pagintation-wrapper
-  position: relative !important
-  top: 2rem !important
-  padding: 4rem !important
+  position: static !important
+  padding: 4em !important
 
   .pagination.pager
     position: relative !important
@@ -83,6 +83,18 @@ body
     
   li.active
     background: #7b1fa2 !important
+  li:hover,
+  li>a:hover
+    background: #7b1fa2 !important
+    color: #ffffff !important
+    cursor: pointer !important
+    border-radius: 50%
+
+  #total_reg
+    display: blocka
+    position: static !important
+    margin-top: -5em
+
 
 // Footer
 
@@ -98,10 +110,12 @@ body
   height: 6rem
   border-top: 1px solid $purple-dark-darker-color
   
-  h5, p
+  h5, 
+  p
     font-family: $handlee-font
     text-shadow: 0 0 3px #333, 0 0 5px #333
-  a, a:active
+  a, 
+  a:active
     color: $purple-dark-light-color
     &:hover,&:focus
       color: $purple-dark-darker-color
