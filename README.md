@@ -1,5 +1,5 @@
 # Internet Abbreviations
-A List of most popular internet slang abbreviations...
+A List of most popular internet abbreviations...
 
 # [Link](https://c-cyril-l.github.io/Internet-Abbreviations/)
 
