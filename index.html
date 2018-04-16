@@ -31,7 +31,7 @@
 
     <!-- External Fonts -->
 
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Handlee|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Handlee|Chau+Philomene+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Favicon -->
@@ -44,7 +44,26 @@
 
 <body>
 
-    <header class="header header-wrapper">
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Internet Abbreviations</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">General</a></li>
+                <li><a href="currencies.html">Cryptos</a></li>
+                <li><a href="emoj.html">Emotions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">General</a></li>
+        <li><a href="currencies.html">Currencies</a></li>
+        <li><a href="emoj.html">Emotions</a></li>
+    </ul>
+
+    <header class="header header-wrapper z-depth-3">
+
         <h1>Internet Abbreviations...</h1>
         <p>A bunch of abbreviations available On internet nowdays.</p>
     </header>
@@ -62,7 +81,7 @@
                         </label>
                     </div>
 
-                    <table class="centered highlight col 8" id="myTable">
+                    <table class="centered highlight col-8" id="myTable">
                         <thead>
                             <tr>
                                 <th>Abbreviations</th>
@@ -267,6 +286,10 @@
                                 <td>See you</td>
                             </tr>
                             <tr>
+                                <td>CUL</td>
+                                <td>See you Later</td>
+                            </tr>
+                            <tr>
                                 <td>CYA</td>
                                 <td>See ya OR Cover Your Ass</td>
                             </tr>
@@ -309,6 +332,10 @@
                             <tr>
                                 <td>DOA</td>
                                 <td>Dead on arrival. Refers to hardware that is broken on delivery</td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td>Date of birth</td>
                             </tr>
                             <tr>
                                 <td>ELI5</td>
@@ -471,6 +498,10 @@
                                 <td>Name used in online chat</td>
                             </tr>
                             <tr>
+                                <td>HBD</td>
+                                <td>Happy birthday</td>
+                            </tr>
+                            <tr>
                                 <td>HF</td>
                                 <td>Have fun</td>
                             </tr>
@@ -604,6 +635,10 @@
                             <tr>
                                 <td>IYKWIM</td>
                                 <td>If you know what I mean</td>
+                            </tr>
+                            <tr>
+                                <td>J4F</td>
+                                <td>Just for fun</td>
                             </tr>
                             <tr>
                                 <td>jaggy</td>
@@ -930,6 +965,10 @@
                                 <td>On the phone or One true pairing or On The Piss</td>
                             </tr>
                             <tr>
+                                <td>OTW</td>
+                                <td>On the way</td>
+                            </tr>
+                            <tr>
                                 <td>P2P</td>
                                 <td>Peer to peer, or pay to play</td>
                             </tr>
@@ -977,6 +1016,10 @@
                             <tr>
                                 <td>PL</td>
                                 <td>Powerleveling, used in online games.</td>
+                            </tr>
+                            <tr>
+                                <td>PLZ</td>
+                                <td>Please</td>
                             </tr>
 
                             <tr>
@@ -1061,6 +1104,10 @@
                             <tr>
                                 <td>RTFM/RTM</td>
                                 <td>Read the (fucking/fine) manual or reboot the (fucking) machine</td>
+                            </tr>
+                            <tr>
+                                <td>SAR</td>
+                                <td>Sent as received</td>
                             </tr>
                             <tr>
                                 <td>SCNR</td>
@@ -1235,6 +1282,10 @@
                                 <td>TY</td>
                                 <td>Thank you</td>
                             </tr>
+                            <tr>
+                                <td>TYAL</td>
+                                <td>Thank you a lot</td>
+                            </tr>
 
                             <tr>
                                 <td>TYT</td>
@@ -1249,6 +1300,10 @@
                             <tr>
                                 <td>U</td>
                                 <td>You</td>
+                            </tr>
+                            <tr>
+                                <td>URS</td>
+                                <td>Yours</td>
                             </tr>
 
                             <tr>
@@ -1405,21 +1460,46 @@
                                 <td>You're welcome.</td>
                             </tr>
 
-
-
-
-
-
                         </tbody>
-
+                        <tfoot>
+                            <tr>
+                                <th>Abbreviations</th>
+                                <th>Meaning</th>
+                            </tr>
+                        </tfoot>
 
                     </table>
 
                 </div>
-                <div class="col-md-12 center text-center pagintation-wrapper">
-                    <div class="centered" id="total_reg"></div>
-                    <ul class="pagination pager centered" id="myPager"></ul>
-                </div>
+                <ul class="pagination pagintation-wrapper">
+                    <div id="total_reg"></div>
+                    <li class="waves-effect active"><a href="#">a</a></li>
+                    <li class="waves-effect"><a href="#">b</a></li>
+                    <li class="waves-effect"><a href="#">c</a></li>
+                    <li class="waves-effect"><a href="#">d</a></li>
+                    <li class="waves-effect"><a href="#">e</a></li>
+                    <li class="waves-effect"><a href="#">f</a></li>
+                    <li class="waves-effect"><a href="#">g</a></li>
+                    <li class="waves-effect"><a href="#">h</a></li>
+                    <li class="waves-effect"><a href="#">i</a></li>
+                    <li class="waves-effect"><a href="#">g</a></li>
+                    <li class="waves-effect"><a href="#">k</a></li>
+                    <li class="waves-effect"><a href="#">l</a></li>
+                    <li class="waves-effect"><a href="#">m</a></li>
+                    <li class="waves-effect"><a href="#">n</a></li>
+                    <li class="waves-effect"><a href="#">o</a></li>
+                    <li class="waves-effect"><a href="#">p</a></li>
+                    <li class="waves-effect"><a href="#">q</a></li>
+                    <li class="waves-effect"><a href="#">r</a></li>
+                    <li class="waves-effect"><a href="#">s</a></li>
+                    <li class="waves-effect"><a href="#">t</a></li>
+                    <li class="waves-effect"><a href="#">u</a></li>
+                    <li class="waves-effect"><a href="#">v</a></li>
+                    <li class="waves-effect"><a href="#">w</a></li>
+                    <li class="waves-effect"><a href="#">x</a></li>
+                    <li class="waves-effect"><a href="#">y</a></li>
+                    <li class="waves-effect"><a href="#">z</a></li>
+                </ul>
             </div>
 
         </div>
@@ -1429,18 +1509,15 @@
 
     </main>
 
-
-    <div class="footer-container">
+    <div class="footer-container z-depth-5">
         <h5>Copyright © 2018 Cyril Douglas</h5>
-        <p>All Of These Abbreviations Taken Form <a href="https://en.wiktionary.org/wiki/Appendix:English_internet_slang" target="_blank">Here</a>.</p>
+        <p>Most Of These Abbreviations Taken Form <a href="https://en.wiktionary.org/wiki/Appendix:English_internet_slang" target="_blank">Here</a>.</p>
     </div class="footer-container">
-
 
     <!-- External Scripts -->
     <script src="assets/javascripts/jquery-3.3.1.min.js"></script>
 
     <script src="assets/javascripts/materialize.min.js"></script>
-    <script src="assets/javascripts/pagination.js"></script>
 
     <!-- Custom Script -->
 

@@ -20,10 +20,45 @@ body {
   width: 100%;
 }
 
+.transparent {
+  position: absolute;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav .brand-logo {
+  margin-left: 8rem !important;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.3em !important;
+}
+
+nav ul {
+  margin-right: 3rem !important;
+}
+
+nav li {
+  margin-right: 1.3rem;
+}
+
+.sidenav {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 150, 243, 0.94)), to(rgba(33, 150, 243, 0.94))), url("../images/bg-header.jpg") !important;
+  background: linear-gradient(rgba(33, 150, 243, 0.94), rgba(33, 150, 243, 0.94)), url("../images/bg-header.jpg") !important;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.sidenav a {
+  color: white !important;
+}
+
 .header-wrapper,
 .footer-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 31, 162, 0.94)), to(rgba(123, 31, 162, 0.94))), url("../images/bg-header.jpg");
-  background: linear-gradient(rgba(123, 31, 162, 0.94), rgba(123, 31, 162, 0.94)), url("../images/bg-header.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 150, 243, 0.94)), to(rgba(33, 150, 243, 0.94))), url("../images/bg-header.jpg");
+  background: linear-gradient(rgba(33, 150, 243, 0.94), rgba(33, 150, 243, 0.94)), url("../images/bg-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -33,7 +68,7 @@ body {
 .header-wrapper {
   text-align: center;
   padding: 4rem;
-  border-bottom: 1px solid #6b1b8d;
+  border-bottom: 1px solid #0d8aee;
 }
 
 .header-wrapper h1,
@@ -49,7 +84,7 @@ body {
 }
 
 .header-wrapper h1 {
-  font-family: "Handlee", cursive;
+  font-family: "Chau Philomene One", sans-serif;
   font-size: 3.5rem;
 }
 
@@ -62,22 +97,33 @@ body {
 }
 
 .labelSearch {
-  color: #7b1fa2;
+  color: #2196f3;
 }
 
 .input-field input[type=text]:focus + label {
-  color: #7b1fa2 !important;
+  color: #2196f3 !important;
   margin-top: 1rem;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #7b1fa2 !important;
-  -webkit-box-shadow: 0 1px 0 0 #7b1fa2 !important;
-          box-shadow: 0 1px 0 0 #7b1fa2 !important;
+  border-bottom: 1px solid #2196f3 !important;
+  -webkit-box-shadow: 0 1px 0 0 #2196f3 !important;
+          box-shadow: 0 1px 0 0 #2196f3 !important;
+}
+
+table {
+  margin-bottom: 4em !important;
+}
+
+table tfoot tr th {
+  text-align: center !important;
+}
+
+table tfoot tr {
+  border: none !important;
 }
 
 .pagintation-wrapper {
-  position: static !important;
   padding: 4em !important;
 }
 
@@ -86,22 +132,24 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
   padding: 2rem !important;
 }
 
+.pagintation-wrapper li > a {
+  text-transform: uppercase !important;
+}
+
 .pagintation-wrapper li.active {
-  background: #7b1fa2 !important;
+  background: #2196f3 !important;
 }
 
 .pagintation-wrapper li:hover,
 .pagintation-wrapper li > a:hover {
-  background: #7b1fa2 !important;
+  background: #2196f3 !important;
   color: #ffffff !important;
   cursor: pointer !important;
-  border-radius: 50%;
 }
 
 .pagintation-wrapper #total_reg {
-  display: blocka;
-  position: static !important;
-  margin-top: -5em;
+  display: block;
+  margin-bottom: 2em !important;
 }
 
 .footer-container {
@@ -124,22 +172,22 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
       -ms-flex-align: center;
           align-items: center;
   height: 6rem;
-  border-top: 1px solid #6b1b8d;
+  border-top: 1px solid #0d8aee;
 }
 
 .footer-container h5,
 .footer-container p {
-  font-family: "Handlee", cursive;
+  font-family: "Gloria Hallelujah", cursive;
   text-shadow: 0 0 3px #333, 0 0 5px #333;
 }
 
 .footer-container a,
 .footer-container a:active {
-  color: #8b23b7;
+  color: #2196f3;
 }
 
 .footer-container a:hover, .footer-container a:focus,
 .footer-container a:active:hover,
 .footer-container a:active:focus {
-  color: #6b1b8d;
+  color: #0d8aee;
 }

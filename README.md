@@ -5,7 +5,9 @@ A List of most popular internet abbreviations...
 
 >  Most Of Abbreviations Taken From [Here](https://en.wiktionary.org/wiki/Appendix:English_internet_slang)
 
->  Credits [pinzon1992](https://github.com/pinzon1992/materialize_table_pagination)
+>  All Of Crypto Currencies Taken From [Here](https://en.wikipedia.org/wiki/List_of_cryptocurrencies)
+
+>  All Of Emotions Taken From [Here](https://gist.github.com/Zenexer/af4dd767338d6c6ba662)
 
 ## License
 

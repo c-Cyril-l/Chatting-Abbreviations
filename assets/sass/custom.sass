@@ -17,15 +17,40 @@ html
   
 
 body
-    display: flex
-    flex-direction: column
-    width: 100%
+  display: flex
+  flex-direction: column
+  width: 100%
+ 
   
 // Header & Footer Combinations
 
+.transparent
+  position: absolute
+
+
+nav 
+  margin-top: 1rem
+  .brand-logo
+    margin-left: 8rem !important
+    font-family: $gloria-font
+    font-size: 1.3em !important
+  ul 
+    margin-right: 3rem !important
+  li
+    margin-right: 1.3rem
+.sidenav
+  background: linear-gradient(rgba($blue-color, .94), rgba($blue-color, .94)), url('../images/bg-header.jpg') !important
+  text-align: center
+  background-repeat: no-repeat
+  background-size: contain
+  background-attachment: fixed
+  a
+    color: white !important
+
+
 .header-wrapper,
 .footer-container
-  background: linear-gradient(rgba($purple-dark-color, .94), rgba($purple-dark-color, .94)), url('../images/bg-header.jpg') 
+  background: linear-gradient(rgba($blue-color, .94), rgba($blue-color, .94)), url('../images/bg-header.jpg') 
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
@@ -36,7 +61,7 @@ body
 .header-wrapper
   text-align: center
   padding: 4rem
-  border-bottom: 1px solid $purple-dark-darker-color
+  border-bottom: 1px solid $blue-darker-color
   
   h1, 
   p 
@@ -47,7 +72,7 @@ body
     -moz-osx-font-smoothing: grayscale
 
   h1 
-    font-family: $handlee-font
+    font-family: $Chau-Philomene-font
     font-size: 3.5rem
 
   p 
@@ -61,39 +86,47 @@ body
 // Search Input
 
 .labelSearch
-  color: $purple-dark-color
+  color: $blue-color
 
 .input-field input[type=text]:focus + label
-  color: $purple-dark-color !important
+  color: $blue-color !important
   margin-top: 1rem
 
 input[type=text]:not(.browser-default):focus:not([readonly])
-  border-bottom: 1px solid $purple-dark-color !important
-  box-shadow: 0 1px 0 0 $purple-dark-color !important
+  border-bottom: 1px solid $blue-color !important
+  box-shadow: 0 1px 0 0 $blue-color !important
    
+table 
+  margin-bottom: 4em !important
+
+  tfoot tr th
+    text-align: center !important
+    
+  tfoot tr 
+    border: none !important
+    
+
 // pagination
 
 .pagintation-wrapper
-  position: static !important
   padding: 4em !important
 
   .pagination.pager
     position: relative !important
     padding: 2rem !important
-    
+
+  li > a
+    text-transform: uppercase !important
   li.active
-    background: #7b1fa2 !important
+    background: $blue-color !important
   li:hover,
   li>a:hover
-    background: #7b1fa2 !important
+    background: $blue-color !important
     color: #ffffff !important
     cursor: pointer !important
-    border-radius: 50%
-
   #total_reg
-    display: blocka
-    position: static !important
-    margin-top: -5em
+    display: block
+    margin-bottom: 2em !important;
 
 
 // Footer
@@ -108,14 +141,15 @@ input[type=text]:not(.browser-default):focus:not([readonly])
   justify-content: center
   align-items: center
   height: 6rem
-  border-top: 1px solid $purple-dark-darker-color
+  border-top: 1px solid $blue-darker-color
   
   h5, 
   p
-    font-family: $handlee-font
+    font-family: $gloria-font
     text-shadow: 0 0 3px #333, 0 0 5px #333
   a, 
   a:active
-    color: $purple-dark-light-color
+    color: $blue-light-color
     &:hover,&:focus
-      color: $purple-dark-darker-color
+      color: $blue-darker-color
+
