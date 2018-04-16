@@ -27,6 +27,9 @@ function loading() {
     } else if (cuurPage.includes('emoj')) {
         filter(null, false, 'other', 0, 18);
         document.getElementById('total_reg').textContent = tr.length - 1 + " Emotions In Total";
+    } else {
+        filter('a');
+        document.getElementById('total_reg').textContent = tr.length - 1 + " Abbreviations In Total";
     }
 }
 
