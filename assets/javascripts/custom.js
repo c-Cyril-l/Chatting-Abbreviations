@@ -18,18 +18,16 @@ document.addEventListener('DOMContentLoaded', loading);
 
 // Filtering Tables items by checking where we landed. 
 function loading() {
-    if (cuurPage.includes('index')) {
-        filter('a');
-        document.getElementById('total_reg').textContent = tr.length - 1 + " Abbreviations In Total";
-    } else if (cuurPage.includes('currencies')) {
+
+    filter('a');
+    document.getElementById('total_reg').textContent = tr.length - 1 + " Abbreviations In Total";
+
+    if (cuurPage.includes('currencies')) {
         filter(null, false, 'other', 0, 18);
         document.getElementById('total_reg').textContent = tr.length - 1 + " Crypto Currencies In Total";
     } else if (cuurPage.includes('emoj')) {
         filter(null, false, 'other', 0, 18);
         document.getElementById('total_reg').textContent = tr.length - 1 + " Emotions In Total";
-    } else {
-        filter('a');
-        document.getElementById('total_reg').textContent = tr.length - 1 + " Abbreviations In Total";
     }
 }
 
